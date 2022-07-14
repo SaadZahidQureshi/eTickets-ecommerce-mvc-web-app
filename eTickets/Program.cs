@@ -1,4 +1,10 @@
+using eTickets.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//DbContext Configurations
+
+builder.Services.AddDbContext<AppDbContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
